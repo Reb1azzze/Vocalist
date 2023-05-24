@@ -1,0 +1,21 @@
+.Connector {
+  position: absolute;
+  background-color: white;
+  width: 500px;
+  height: 25px;
+  rotate: 110deg;
+  z-index: 1;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+.Top {
+  position: absolute;
+  background-color: white;
+  top: 920px;
+  left: 609px;
+  width: 730px;
+  height: 25px;
+  rotate: 8deg;
+  z-index: 2;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}

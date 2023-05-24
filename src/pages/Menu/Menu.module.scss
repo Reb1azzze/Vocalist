@@ -1,0 +1,13 @@
+.mainContainer {
+  min-height: 820px;
+}
+
+.menuContainer {
+  height: 800px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  gap: 0.5%;
+  margin: auto;
+  padding-top: 10px;
+}
