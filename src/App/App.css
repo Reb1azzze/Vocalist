@@ -1,4 +1,9 @@
-.App{
+.App {
     background: fixed;
     background: linear-gradient(to right, #02026c, #000510);
+}
+
+.margin {
+    width: 100%;
+    height: 112px;
 }

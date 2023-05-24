@@ -8,6 +8,7 @@ const App:FC = () => {
     return (
         <Router>
             <div className='App'>
+                <div className='margin'></div>
                 <Navbar/>
                 <AnimatedRoutes/>
             </div>
