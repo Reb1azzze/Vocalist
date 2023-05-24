@@ -5,7 +5,7 @@ import MainInformation from "../../components/MainInformation/MainInformation";
 import Notes from "../../components/Notes/Notes";
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
 import Performance from "../../components/Performance/Performance";
-import VocalLessonsJpg from "../../assets/2.jpg"
+import VocalLessonsJpg from "../../assets/jpg/2.jpg"
 const VocalLessons = () => {
     return (
         <motion.div

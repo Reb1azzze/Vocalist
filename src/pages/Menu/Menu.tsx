@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Menu.module.scss'
 import MenuSlot from "../../components/MenuSlot/MenuSlot";
-import AboutJpg from "../../assets/gkh.jpg"
-import VocalLessons from "../../assets/2.jpg"
-import OnlineCourses from "../../assets/3.jpg"
-import Cooperation from "../../assets/4.jpg"
+import AboutJpg from "../../assets/jpg/gkh.jpg"
+import VocalLessons from "../../assets/jpg/2.jpg"
+import OnlineCourses from "../../assets/jpg/3.jpg"
+import Cooperation from "../../assets/jpg/4.jpg"
 import { motion } from 'framer-motion';
 const Menu = () => {
     const [isChosen,setChosen] = useState(false);

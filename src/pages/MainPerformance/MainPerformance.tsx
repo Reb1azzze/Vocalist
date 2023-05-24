@@ -2,7 +2,7 @@ import React from 'react';
 import MainInformation from "../../components/MainInformation/MainInformation";
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
 import Performance from "../../components/Performance/Performance";
-import MainPhoto from "../../assets/gkh.jpg"
+import MainPhoto from "../../assets/jpg/gkh.jpg"
 import styles from "./MainPerformance.module.scss"
 import Notes from "../../components/Notes/Notes";
 import {motion} from "framer-motion";
@@ -21,7 +21,6 @@ const MainPerformance = () => {
                 animate={{x:"1130px",transition:{duration:0.5}}}
                 exit={{x:"300px",transition:{duration:0.2}}}/>
             <MainInformation/>
-            <Notes/>
             <SpecificInformation/>
             <Performance/>
             <SpecificInformation/>

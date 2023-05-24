@@ -1,8 +1,8 @@
 import React from 'react';
-import work_experience from '../../assets/work_experience.png'
-import education from '../../assets/education.png'
-import languages from '../../assets/languages.png'
-import chat from '../../assets/chat.png'
+import work_experience from '../../assets/jpg/work_experience.png'
+import education from '../../assets/jpg/education.png'
+import languages from '../../assets/jpg/languages.png'
+import chat from '../../assets/jpg/chat.png'
 import styles from './SpecificInfromation.module.scss'
 
 const SpecificInformation = () => {

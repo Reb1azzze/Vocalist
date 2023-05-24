@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NoteBlock.module.scss";
-import work_experience from "../../assets/work_experience.png";
+import work_experience from "../../assets/jpg/work_experience.png";
 
 interface NoteBlockProps {
     title: string;

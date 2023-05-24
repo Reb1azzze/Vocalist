@@ -1,7 +1,7 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import styles from "../MainPerformance/MainPerformance.module.scss";
-import ContactsJpg from "../../assets/4.jpg";
+import ContactsJpg from "../../assets/jpg/4.jpg";
 import MainInformation from "../../components/MainInformation/MainInformation";
 import Notes from "../../components/Notes/Notes";
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
@@ -17,7 +17,7 @@ const Contacts = () => {
                 className={styles.mainPhoto}
                 src={ContactsJpg}
                 alt={"d"}
-                initial={{position:"fixed",opacity:1,top:"135px",left:"1350px"}}
+                initial={{position:"fixed",borderRadius:"70px",opacity:1,top:"135px",left:"1350px"}}
                 animate={{x:"100px",transition:{duration:0.5}}}
                 exit={{x:"50px",transition:{duration:0.2}}}/>
             <MainInformation/>
