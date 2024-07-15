@@ -1,14 +1,16 @@
 import React, {FC} from 'react';
 import Navbar from "../components/Navbar/Navbar";
-import {BrowserRouter as Router} from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import AnimatedRoutes from "../components/AnimatedRoutes/AnimatedRoutes";
+
+import './App.css';
+import '../index.css';
 
 const App:FC = () => {
     return (
         <Router>
-            <div className='App'>
-                <div className='margin'></div>
+            <div className='App font-NewStandartOld'>
+                <div className='margin'/>
                 <Navbar/>
                 <AnimatedRoutes/>
             </div>

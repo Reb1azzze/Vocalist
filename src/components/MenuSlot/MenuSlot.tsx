@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './MenuSlot.module.scss';
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import BlurredTextBlock from "../BlurredTextBlock/BlurredTextBlock";
 
 interface MenuSlotProps {
     title: string;
@@ -20,7 +21,7 @@ const MenuSlot = (props:MenuSlotProps) => {
              onMouseEnter={props.DarkBackground}
              onMouseLeave={props.LightBackground}
              onClick={() => navigate(props.navigate)}>
-            <h3 className={styles.title}>{props.title}</h3>
+            <BlurredTextBlock title={props.title}/>
         </div>
     );
 };

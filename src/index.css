@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'NewStandartOld';
+    src: local('NewStandartOld.woff'), url('./fonts/NewStandartOld.woff') format('woff');
+    src: local('NewStandartOld.ttf'), url('./fonts/NewStandartOld.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.font-NewStandartOld {
+    font-family: 'NewStandartOld';
+    font-weight: bold;
+}

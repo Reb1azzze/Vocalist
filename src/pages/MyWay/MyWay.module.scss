@@ -1,0 +1,12 @@
+.container {
+  z-index: 20;
+}
+
+.mainPhoto {
+  width: 22vw;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+  object-fit: cover;
+  background-size: cover;
+  background-position-x: 40%;
+}

@@ -1,41 +1,24 @@
 import React from 'react';
-import { TbMicrophone2 } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
+import { BsInstagram, BsTelegram, BsYoutube } from "react-icons/bs";
+import { FiAlignJustify } from "react-icons/fi";
 import './Navbar.scss';
-import {BsInstagram, BsTelegram, BsTiktok, BsWhatsapp, BsYoutube} from "react-icons/bs";
-import {GiClick} from "react-icons/gi";
 const Navbar = () => {
     let navigate = useNavigate();
     return (
         <div className='navbar'>
             <ul>
-                <li className='navbar-main-item' onClick={() => navigate('/menu')}>
-                    <TbMicrophone2 className='navbar-icon'/>
-                    <span className='navbar-title'>Гульшат Хамурзина</span>
+                <li className='navbar-menu-item' onClick={() => navigate('/menu')}>
+                    <FiAlignJustify className='navbar-icon icon-menu'/>
                 </li>
-                <li className='navbar-item3'>
-                    <BsInstagram className='navbar-icon' />
-                    <span className='navbar-title'>Instagram</span>
+                <li className='navbar-item'>
+                    <BsInstagram className='navbar-icon icon-inst' />
                 </li>
-                <li className='navbar-item3'>
-                    <BsYoutube className='navbar-icon' />
-                    <span className='navbar-title'>YouTube</span>
+                <li className='navbar-item'>
+                    <BsYoutube className='navbar-icon icon-yt' />
                 </li>
-                <li className='navbar-item4'>
-                    <BsWhatsapp className='navbar-icon'/>
-                    <span className='navbar-title'>Whatsapp</span>
-                </li>
-                <li className='navbar-item2'>
-                    <BsTelegram className='navbar-icon'/>
-                    <span className='navbar-title'>Telegram</span>
-                </li>
-                <li className='navbar-item2'>
-                    <BsTiktok className='navbar-icon'/>
-                    <span className='navbar-title'>TikTok</span>
-                </li>
-                <li className='navbar-item3'>
-                    <GiClick className='navbar-icon' />
-                    <span className='navbar-title'>Записаться в 1 клик</span>
+                <li className='navbar-item'>
+                    <BsTelegram className='navbar-icon icon-tg'/>
                 </li>
             </ul>
         </div>

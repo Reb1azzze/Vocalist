@@ -1,0 +1,20 @@
+.title {
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.titleBlock {
+  top: 75%;
+  height: 13vh;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(7.5px);
+  border-radius: 70px;
+}

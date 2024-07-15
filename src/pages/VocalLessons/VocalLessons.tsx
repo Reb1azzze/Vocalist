@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from "../MainPerformance/MainPerformance.module.scss";
-import MainInformation from "../../components/MainInformation/MainInformation";
-import Notes from "../../components/Notes/Notes";
+import styles from "../MyWay/MyWay.module.scss";
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
-import Performance from "../../components/Performance/Performance";
-import VocalLessonsJpg from "../../assets/jpg/2.jpg"
+import MyPerformance from "../../components/MyPerformance/MyPerformance";
+import VocalLessonsJpg from "../../assets/jpg/VocalLessons.jpg"
+import ChatForm from "../../components/ChatForm/ChatForm";
+import ReviewSlider from "../../components/ReviewSlider/ReviewSlider";
+import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
 const VocalLessons = () => {
     return (
         <motion.div
@@ -13,18 +14,19 @@ const VocalLessons = () => {
             initial={{opacity: 0}}
             animate={{opacity: 1}} 
             exit={{opacity: 0,transition:{duration:0.2}}}>
-            <motion.img
+            <motion.div
                 className={styles.mainPhoto}
-                src={VocalLessonsJpg}
-                alt={"d"}
-                initial={{position:"fixed",opacity:1,top:"135px",left:"435px"}}
-                animate={{x:"930px",transition:{duration:0.5}}}
-                exit={{x:"440px",transition:{duration:0.2}}}/>
-            <MainInformation/>
-            <Notes/>
+                initial={{position:"fixed",opacity:1,top:"98px",left:"450px"}}
+                animate={{x:"-450px",transition:{duration:0.5}}}
+                exit={{x:"10px",transition:{duration:0.2}}}
+                style={{backgroundImage: `url(${VocalLessonsJpg})`}}>
+                <BlurredTextBlock title={"Уроки вокала"}/>
+            </motion.div>
+            <ChatForm minimize={true}/>
             <SpecificInformation/>
-            <Performance/>
+            <MyPerformance/>
             <SpecificInformation/>
+            <ReviewSlider/>
         </motion.div>
     );
 };
