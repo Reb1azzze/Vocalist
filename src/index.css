@@ -1,12 +1,47 @@
 @font-face {
     font-family: 'NewStandartOld';
-    src: local('NewStandartOld.woff'), url('./fonts/NewStandartOld.woff') format('woff');
     src: local('NewStandartOld.ttf'), url('./fonts/NewStandartOld.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Peridot';
+    src: local('PeridotDemoPE-Light.otf'), url('./fonts/PeridotDemoPE-Light.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Nudla-Thin';
+    src: local('Nudla-Thin'), url('./fonts/Nudla-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Masvol-thin';
+    src: local('cd-masvol-thin'), url('./fonts/cd-masvol-thin.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 .font-NewStandartOld {
-    font-family: 'NewStandartOld';
+    font-family: 'NewStandartOld', serif;
+    font-weight: bold;
+}
+
+.font-Peridot {
+    font-family: 'Peridot', serif;
+    font-weight: bold;
+}
+
+.font-Nudla {
+    font-family: 'Nudla-Thin', serif;
+    font-weight: bold;
+}
+
+.font-Masvol {
+    font-family: 'Masvol-thin', serif;
     font-weight: bold;
 }

@@ -9,7 +9,7 @@ import '../index.css';
 const App:FC = () => {
     return (
         <Router>
-            <div className='App font-NewStandartOld'>
+            <div className='App font-Peridot'>
                 <div className='margin'/>
                 <Navbar/>
                 <AnimatedRoutes/>

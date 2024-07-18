@@ -26,7 +26,7 @@ const ChatForm = ({minimize} : ChatFormProps) => {
                 </Radio.Group>
                 <Input className={styles.input} size='large' type='text' placeholder='Имя'/>
                 <Input className={styles.input} size='large' type='text' placeholder='Номер телефона'/>
-                <Button className={styles.submitButton} size="large" type='primary'>Отправить</Button>
+                <Button className={styles.submitButton} size="large" type='primary'>Перезвоните мне!</Button>
             </div>
         </div>
     );
