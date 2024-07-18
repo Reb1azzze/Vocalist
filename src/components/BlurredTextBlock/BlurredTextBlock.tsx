@@ -8,7 +8,9 @@ interface BlurredTextBlockProps {
 const BlurredTextBlock = (props:BlurredTextBlockProps) => {
     return (
         <div className={styles.titleBlock}>
-            <h3 className={styles.title}>{props.title}</h3>
+            <div className={styles.innerBlock}>
+                <h3 className={styles.title}>{props.title}</h3>
+            </div>
         </div>
     );
 };
