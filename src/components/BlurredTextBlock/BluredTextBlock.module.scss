@@ -1,5 +1,5 @@
 .title {
-  font-size: 28pt;
+  font-size: 22pt;
   font-weight: 600;
   margin: 0;
   color: #eeb082;
@@ -8,25 +8,27 @@
 .titleBlock {
   top: 8%;
   color: white;
-  height: 13vh;
+  height: 11vh;
   position: relative;
-  width: 80%;
+  width: 60%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8px);
-  border-radius: 20px 120px;
+  border-radius: 20px;
 }
 
 .innerBlock {
-  width: 100%;
+  position: absolute;
+  width: 22vw;
   height: 50%;
-  margin: auto;
-  background: rgb(255,255,255,1);
-  border-radius: 20px;
+  background-image: url("../../assets/jpg/whiteBrush.png");
+  background-size: cover;
+  background-position-y: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
 }

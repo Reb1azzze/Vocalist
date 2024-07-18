@@ -18,20 +18,16 @@
 }
 
 .form {
-  width: 16vw;
-  margin: 5.5vh 2vw;
+  width: 13vw;
+  margin: 5.5vh auto;
   z-index: 10;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8px);
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 4vh;
   font-size: 20pt;
   font-weight: 600;
-  border-radius: 20px;
+  border-radius: 35px;
   padding: 3vh;
 }
 
@@ -43,12 +39,30 @@
   animation: minimizeForm 0.65s forwards reverse;
 }
 
+.radioGroup {
+  margin-top: 8vh;
+}
+
+.innerBlock {
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  width: 19vw;
+  height: 5.7vh;
+  background-image: url("../../assets/jpg/whiteBrush.png");
+  background-size: cover;
+  background-position-y: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
 .title {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1vh;
-  font-size: 28pt;
-  color: white;
+  font-size: 22pt;
+  color: #eeb082;
 }
 
 .radio {

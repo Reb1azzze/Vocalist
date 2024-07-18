@@ -15,7 +15,7 @@ const MyWay = () => {
                     exit={{opacity:0}}>
             <motion.div
                 className={styles.mainPhoto}
-                initial={{position:"fixed",opacity:1,top:"98px",left:"200px"}}
+                initial={{position:"fixed",opacity:1,top:"80px",left:"200px"}}
                 animate={{x:"-200px",transition:{duration:0.5}}}
                 exit={{x:"-150px",transition:{duration:0.2}}}
                 style={{backgroundImage: `url(${MainPhoto})`}}>

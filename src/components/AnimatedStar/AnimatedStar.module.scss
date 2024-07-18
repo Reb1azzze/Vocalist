@@ -1,0 +1,21 @@
+.container {
+  background-image: url("../../assets/jpg/star.png");
+  position: relative;
+  top: -350px;
+  left: 150px;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position-y: 50%;
+  animation: rotate 8s infinite linear;
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
