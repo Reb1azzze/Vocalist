@@ -10,10 +10,10 @@ const AnimatedRoutes = () => {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route path="/" Component={MyWay}/>
+                <Route path="/" Component={Menu}/>
                 <Route path="/vocalLessons" Component={VocalLessons}/>
                 <Route path="/onlineCourses" Component={Performance}/>
-                <Route path="/menu" Component={Menu}/>
+                <Route path="/myWay" Component={MyWay}/>
             </Routes>
         </AnimatePresence>
     );

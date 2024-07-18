@@ -25,7 +25,7 @@ const Menu = () => {
             exit={{opacity:0}}>
             <div className={styles.menuContainer}>
                 <MenuSlot title={'Мой путь'} image={MyWay} LightBackground={LightBackground}
-                          DarkBackground={DarkBackground} navigate={'/'} isChosen={isChosen} />
+                          DarkBackground={DarkBackground} navigate={'/myWay'} isChosen={isChosen} />
                 <MenuSlot title={'Уроки вокала'} image={VocalLessons}  LightBackground={LightBackground}
                           DarkBackground={DarkBackground} navigate={'/vocalLessons'} isChosen={isChosen} />
                 <MenuSlot title={'Перфоманс'} image={PerformanceJPG} LightBackground={LightBackground}
