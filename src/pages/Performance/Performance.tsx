@@ -21,7 +21,8 @@ const Performance = () => {
                 style={{backgroundImage: `url(${PerformanceJPG})`}}>
                 <BlurredTextBlock title={"Перфоманс"}/>
             </motion.div>
-            <ChatForm minimize={true}/>
+            {//<ChatForm minimize={true}/>
+            }
             <SpecificInformation/>
             <MyPerformance/>
             <SpecificInformation/>

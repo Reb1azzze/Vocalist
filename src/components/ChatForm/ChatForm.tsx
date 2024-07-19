@@ -6,8 +6,11 @@ import AnimatedStar from "../AnimatedStar/AnimatedStar";
 
 interface ChatFormProps {
     minimize: boolean
+    DarkBackground:() => void;
+    LightBackground:() => void;
+    isChosen: boolean;
 }
-const ChatForm = ({minimize} : ChatFormProps) => {
+const ChatForm = (props : ChatFormProps) => {
 
     const [value, setValue] = useState(1);
     const onChange = (e: any) => {
@@ -15,9 +18,11 @@ const ChatForm = ({minimize} : ChatFormProps) => {
     };
 
     return (
-        <div className={styles.container + ' ' + (minimize? styles.minimizeContainer : styles.maximizeContainer)}
-             style={{backgroundImage: `url(${ChatBackground})`}}>
-            <div className={styles.form + ' ' + (minimize? styles.minimizeForm : styles.maximizeForm)}>
+        <div className={styles.container + ' ' + (props.isChosen? styles.darkBackground : '')}
+             style={{backgroundImage: `url(${ChatBackground})`}}
+             onMouseEnter={props.DarkBackground}
+             onMouseLeave={props.LightBackground}>
+            <div className={styles.form + ' ' + (props.minimize? styles.minimizeForm : styles.maximizeForm)}>
                 <div className={styles.innerBlock}>
                     <span className={styles.title}>Заявка</span>
                 </div>
@@ -30,7 +35,6 @@ const ChatForm = ({minimize} : ChatFormProps) => {
                 <Input className={styles.input} type='text' placeholder='Имя'/>
                 <Input className={styles.input} type='text' placeholder='Номер телефона'/>
                 <Button className={styles.submitButton} size="large" type='primary'>Перезвоните мне!</Button>
-                <AnimatedStar/>
             </div>
         </div>
     );

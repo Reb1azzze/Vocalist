@@ -30,7 +30,8 @@ const Menu = () => {
                           DarkBackground={DarkBackground} navigate={'/vocalLessons'} isChosen={isChosen} />
                 <MenuSlot title={'Перфоманс'} image={PerformanceJPG} LightBackground={LightBackground}
                           DarkBackground={DarkBackground} navigate={'/onlineCourses'} isChosen={isChosen} />
-                <ChatForm minimize={false}/>
+                <ChatForm LightBackground={LightBackground} DarkBackground={DarkBackground} minimize={false}
+                          isChosen={isChosen}/>
             </div>
         </motion.div>
     );

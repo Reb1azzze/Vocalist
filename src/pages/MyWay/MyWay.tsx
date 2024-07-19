@@ -21,7 +21,8 @@ const MyWay = () => {
                 style={{backgroundImage: `url(${MainPhoto})`}}>
                 <BlurredTextBlock title={"Мой путь"}/>
             </motion.div>
-            <ChatForm minimize={true}/>
+            {//<ChatForm minimize={true}/>
+            }
             <SpecificInformation/>
             <MyPerformance/>
             <SpecificInformation/>

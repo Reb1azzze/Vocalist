@@ -10,7 +10,7 @@
   color: white;
   height: 11vh;
   position: relative;
-  width: 60%;
+  width: 13vw;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -31,4 +31,26 @@
   align-items: center;
   justify-content: center;
   border-radius: 30px;
+}
+
+@media (max-width: 1200px) {
+  .innerBlock {
+    width: 43vw;
+  }
+
+  .titleBlock {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .innerBlock {
+    width: 75vw;
+    min-width: 340px;
+  }
+
+  .titleBlock {
+    width: 45vw;
+    min-width: 180px;
+  }
 }

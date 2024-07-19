@@ -22,7 +22,8 @@ const VocalLessons = () => {
                 style={{backgroundImage: `url(${VocalLessonsJpg})`}}>
                 <BlurredTextBlock title={"Уроки вокала"}/>
             </motion.div>
-            <ChatForm minimize={true}/>
+            {//<ChatForm minimize={true}/>*/}
+            }
             <SpecificInformation/>
             <MyPerformance/>
             <SpecificInformation/>
