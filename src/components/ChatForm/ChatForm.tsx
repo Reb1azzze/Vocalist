@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './ChatForm.module.scss'
 import ChatBackground from "../../assets/jpg/ChatForm.jpg"
 import { Input, Space, Button, Radio} from "antd";
-import AnimatedStar from "../AnimatedStar/AnimatedStar";
+
 
 interface ChatFormProps {
     minimize: boolean

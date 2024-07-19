@@ -4,7 +4,7 @@ import styles from "../MyWay/MyWay.module.scss";
 import PerformanceJPG from "../../assets/jpg/Performance.jpg";
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
 import MyPerformance from "../../components/MyPerformance/MyPerformance";
-import ChatForm from "../../components/ChatForm/ChatForm";
+
 import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
 
 const Performance = () => {

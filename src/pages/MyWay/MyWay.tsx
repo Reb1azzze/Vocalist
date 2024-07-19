@@ -3,7 +3,7 @@ import SpecificInformation from "../../components/SpecificInformation/SpecificIn
 import MyPerformance from "../../components/MyPerformance/MyPerformance";
 import MainPhoto from "../../assets/jpg/MyWay.jpg"
 import styles from "./MyWay.module.scss"
-import ChatForm from "../../components/ChatForm/ChatForm";
+
 import ReviewSlider from "../../components/ReviewSlider/ReviewSlider";
 import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
 import { motion } from "framer-motion";

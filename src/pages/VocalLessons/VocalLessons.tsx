@@ -4,7 +4,7 @@ import styles from "../MyWay/MyWay.module.scss";
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
 import MyPerformance from "../../components/MyPerformance/MyPerformance";
 import VocalLessonsJpg from "../../assets/jpg/VocalLessons.jpg"
-import ChatForm from "../../components/ChatForm/ChatForm";
+
 import ReviewSlider from "../../components/ReviewSlider/ReviewSlider";
 import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
 const VocalLessons = () => {
