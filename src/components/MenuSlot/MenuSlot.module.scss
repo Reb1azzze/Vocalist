@@ -1,5 +1,4 @@
 .container {
-  width: 35vw;
   height: 100%;
   cursor: pointer;
   position: relative;
@@ -17,4 +16,14 @@
 
 .darkBackground {
   opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    background-position-y: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+
 }

@@ -16,7 +16,7 @@ const VocalLessons = () => {
             exit={{opacity: 0,transition:{duration:0.2}}}>
             <motion.div
                 className={styles.mainPhoto}
-                initial={{position:"fixed",opacity:1,top:"98px",left:"450px"}}
+                initial={{position:"fixed",opacity:1,top:"80px",left:"450px"}}
                 animate={{x:"-450px",transition:{duration:0.5}}}
                 exit={{x:"10px",transition:{duration:0.2}}}
                 style={{backgroundImage: `url(${VocalLessonsJpg})`}}>

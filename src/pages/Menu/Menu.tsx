@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import styles from './Menu.module.scss'
 import MenuSlot from "../../components/MenuSlot/MenuSlot";
 import ChatForm from "../../components/ChatForm/ChatForm";
-import MyWayJPG from "../../assets/jpg/test4.jpg"
-import VocalLessonsJPG from "../../assets/jpg/test1.jpg"
-import PerformanceJPG from "../../assets/jpg/test2.jpg"
+import MyWayJPG from "../../assets/jpg/MyWay.jpg"
+import VocalLessonsJPG from "../../assets/jpg/VocalLessons.jpg"
+import PerformanceJPG from "../../assets/jpg/Performance.jpg"
 import { motion } from 'framer-motion';
 
 const Menu = () => {

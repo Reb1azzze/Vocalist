@@ -13,7 +13,7 @@ const ReviewSlider = () => {
         <div className={styles.container}>
             <h3 className={styles.performanceText}>Отзывы</h3>
             <div className={styles.sliderContainer}>
-                <Carousel autoplay dotPosition='top'>
+                <Carousel arrows={true} draggable={true} autoplay={true} dotPosition='top'>
                     <img src={review1} alt={''}/>
                     <img src={review2} alt={''}/>
                     <img src={review3} alt={''}/>

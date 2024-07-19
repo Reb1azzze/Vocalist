@@ -10,7 +10,7 @@ const MyPerformance = () => {
         <div className={styles.container}>
             <h3 className={styles.performanceText}>My Performance</h3>
             <div className={styles.sliderContainer}>
-                <Carousel autoplay dotPosition='top'>
+                <Carousel arrows={true} draggable={true} autoplay={true} dotPosition='top'>
                     <img src={performance1} alt={''}/>
                     <img src={performance2} alt={''}/>
                     <img src={performance3} alt={''}/>

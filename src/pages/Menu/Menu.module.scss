@@ -1,13 +1,26 @@
 .mainContainer {
-  min-height: 92.8vh;
+  min-height: 90vh;
 }
 
 .menuContainer {
-  height: 91.6vh;
-  display: flex;
-  width: 74.2vw;
+  height: 89vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   gap: 1%;
-  padding-left: 1vw;
-  margin-top: -1vw;
+  padding: 0 1vw;
+}
+
+@media (max-width: 1200px) {
+  .menuContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .menuContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
