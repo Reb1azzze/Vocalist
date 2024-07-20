@@ -10,7 +10,6 @@ const App:FC = () => {
     return (
         <Router>
             <div className='App font-Peridot'>
-                <div className='margin'/>
                 <Navbar/>
                 <AnimatedRoutes/>
             </div>
