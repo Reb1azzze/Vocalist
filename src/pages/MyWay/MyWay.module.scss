@@ -1,5 +1,6 @@
 .container {
   z-index: 20;
+  overflow-y: scroll;
 }
 
 .mainPhoto {
@@ -13,7 +14,7 @@
 
 .chatForm {
   position: fixed;
-  right: 0;
+  right: 17px;
   top: 50px;
   width: 22vw;
   height: 90vh;
