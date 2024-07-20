@@ -25,7 +25,7 @@ const ChatForm = (props : ChatFormProps) => {
              onMouseLeave={props.LightBackground}>
             <div className={styles.form + ' ' + (props.minimize? styles.minimizeForm : styles.maximizeForm)}>
                 <BlurredTextBlock title={'Заявка'}/>
-                <Select onChange={onChange} defaultValue= "lesson" options={[
+                <Select onChange={onChange} value={value} defaultValue= "lesson" options={[
                         {
                             value: 'lesson',
                             label: 'Записаться на урок',
