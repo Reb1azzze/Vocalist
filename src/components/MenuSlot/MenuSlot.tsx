@@ -9,19 +9,20 @@ interface MenuSlotProps {
     DarkBackground:() => void;
     LightBackground:() => void;
     navigate: string;
-    isChosen: boolean;
+    toDark: boolean;
+    isHovering: boolean;
 }
 
 const MenuSlot = (props:MenuSlotProps) => {
     let navigate = useNavigate();
     const image = `url(${props.image})`;
     return (
-        <div className={props.isChosen ?styles.container + ' ' + styles.darkBackground: styles.container}
+        <div className={props.toDark ?styles.container + ' ' + styles.darkBackground: styles.container}
              style={{backgroundImage: image}}
              onMouseEnter={props.DarkBackground}
              onMouseLeave={props.LightBackground}
              onClick={() => navigate(props.navigate)}>
-            <BlurredTextBlock title={props.title}/>
+            <BlurredTextBlock title={props.title} star={props.isHovering}/>
         </div>
     );
 };

@@ -8,14 +8,17 @@ import PerformanceJPG from "../../assets/jpg/Performance.jpg"
 import { motion } from 'framer-motion';
 
 const Menu = () => {
-    const [isChosen,setChosen] = useState(false);
+    const [toDark,setDark] = useState(false);
+    const [hovered,setHovered] = useState(0);
     let mobile = window.matchMedia("(max-width: 768px)").matches;
-    const DarkBackground = () => {
-        setChosen(true);
+    const DarkBackground = (e: number) => {
+        setHovered(e);
+        setDark(true);
     }
 
     const LightBackground = () => {
-        setChosen(false);
+        setHovered(0);
+        setDark(false);
     }
 
     return (
@@ -26,13 +29,13 @@ const Menu = () => {
             exit={{opacity:0}}>
             <div className={styles.menuContainer}>
                 <MenuSlot title={'Мой путь'} image={mobile ? VocalLessonsJPG : MyWayJPG} LightBackground={LightBackground}
-                          DarkBackground={DarkBackground} navigate={'/myWay'} isChosen={isChosen} />
+                          DarkBackground={() => DarkBackground(1)} navigate={'/myWay'} toDark={toDark} isHovering={hovered === 1} />
                 <MenuSlot title={'Обучение'} image={VocalLessonsJPG}  LightBackground={LightBackground}
-                          DarkBackground={DarkBackground} navigate={'/vocalLessons'} isChosen={isChosen} />
+                          DarkBackground={() => DarkBackground(2)} navigate={'/vocalLessons'} toDark={toDark} isHovering={hovered === 2} />
                 <MenuSlot title={'Перфоманс'} image={PerformanceJPG} LightBackground={LightBackground}
-                          DarkBackground={DarkBackground} navigate={'/onlineCourses'} isChosen={isChosen} />
-                <ChatForm LightBackground={LightBackground} DarkBackground={DarkBackground} minimize={false}
-                          isChosen={isChosen}/>
+                          DarkBackground={() => DarkBackground(3)} navigate={'/onlineCourses'} toDark={toDark} isHovering={hovered === 3}/>
+                <ChatForm LightBackground={LightBackground} DarkBackground={() => DarkBackground(4)} minimize={false}
+                          isChosen={toDark}/>
             </div>
         </motion.div>
     );

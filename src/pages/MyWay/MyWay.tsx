@@ -19,7 +19,7 @@ const MyWay = () => {
                 animate={{x:"-200px",transition:{duration:0.5}}}
                 exit={{x:"-150px",transition:{duration:0.2}}}
                 style={{backgroundImage: `url(${MainPhoto})`}}>
-                <BlurredTextBlock title={"Мой путь"}/>
+                <BlurredTextBlock title={"Мой путь"} star={true}/>
             </motion.div>
             <div className={styles.chatForm}>
                 <ChatForm/>

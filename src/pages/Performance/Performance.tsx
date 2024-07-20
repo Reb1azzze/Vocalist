@@ -19,7 +19,7 @@ const Performance = () => {
                 animate={{x:"-729px",transition:{duration:0.5}}}
                 exit={{x:"10px",transition:{duration:0.2}}}
                 style={{backgroundImage: `url(${PerformanceJPG})`}}>
-                <BlurredTextBlock title={"Перфоманс"}/>
+                <BlurredTextBlock title={"Перфоманс"} star={true}/>
             </motion.div>
             <div className={styles.chatForm}>
                 <ChatForm/>
