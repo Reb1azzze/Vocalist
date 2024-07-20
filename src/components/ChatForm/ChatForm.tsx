@@ -4,7 +4,6 @@ import ChatBackground from "../../assets/jpg/ChatForm.jpg"
 import {Input, Button, Select} from "antd";
 import BlurredTextBlock from "../BlurredTextBlock/BlurredTextBlock";
 
-
 interface ChatFormProps {
     minimize?: boolean
     DarkBackground?:() => void;
