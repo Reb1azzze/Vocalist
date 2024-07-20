@@ -20,7 +20,7 @@ const VocalLessons = () => {
                 animate={{x:"-450px",transition:{duration:0.5}}}
                 exit={{x:"10px",transition:{duration:0.2}}}
                 style={{backgroundImage: `url(${VocalLessonsJpg})`}}>
-                <BlurredTextBlock title={"Уроки вокала"}/>
+                <BlurredTextBlock title={"Обучение"}/>
             </motion.div>
             <div className={styles.chatForm}>
                 <ChatForm/>

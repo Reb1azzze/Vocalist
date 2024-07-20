@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 
 const Menu = () => {
     const [isChosen,setChosen] = useState(false);
+    let mobile = window.matchMedia("(max-width: 768px)").matches;
     const DarkBackground = () => {
         setChosen(true);
     }
@@ -24,9 +25,9 @@ const Menu = () => {
             animate={{opacity: 1, transition:{duration:1}}}
             exit={{opacity:0}}>
             <div className={styles.menuContainer}>
-                <MenuSlot title={'Мой путь'} image={MyWayJPG} LightBackground={LightBackground}
+                <MenuSlot title={'Мой путь'} image={mobile ? VocalLessonsJPG : MyWayJPG} LightBackground={LightBackground}
                           DarkBackground={DarkBackground} navigate={'/myWay'} isChosen={isChosen} />
-                <MenuSlot title={'Уроки вокала'} image={VocalLessonsJPG}  LightBackground={LightBackground}
+                <MenuSlot title={'Обучение'} image={VocalLessonsJPG}  LightBackground={LightBackground}
                           DarkBackground={DarkBackground} navigate={'/vocalLessons'} isChosen={isChosen} />
                 <MenuSlot title={'Перфоманс'} image={PerformanceJPG} LightBackground={LightBackground}
                           DarkBackground={DarkBackground} navigate={'/onlineCourses'} isChosen={isChosen} />

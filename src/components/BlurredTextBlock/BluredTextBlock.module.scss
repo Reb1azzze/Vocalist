@@ -2,7 +2,10 @@
   font-size: 22pt;
   font-weight: 600;
   margin: 0;
-  color: #eeb082;
+  color: transparent;
+  background-image: url("../../assets/jpg/test2.jpg");
+  background-clip: text;
+  background-size: cover;
 }
 
 .titleBlock {
@@ -45,12 +48,10 @@
 
 @media (max-width: 768px) {
   .innerBlock {
-    width: 75vw;
-    min-width: 340px;
+    width: max(75vw, 340px);
   }
 
   .titleBlock {
-    width: 45vw;
-    min-width: 180px;
+    width: max(45vw, 180px);
   }
 }
