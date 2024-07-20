@@ -2,11 +2,11 @@ import React from 'react';
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
 import MyPerformance from "../../components/MyPerformance/MyPerformance";
 import MainPhoto from "../../assets/jpg/MyWay.jpg"
-import styles from "./MyWay.module.scss"
-
 import ReviewSlider from "../../components/ReviewSlider/ReviewSlider";
 import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
+import ChatForm from "../../components/ChatForm/ChatForm";
 import { motion } from "framer-motion";
+import styles from "./MyWay.module.scss"
 const MyWay = () => {
     return (
         <motion.div className={styles.container}
@@ -21,8 +21,9 @@ const MyWay = () => {
                 style={{backgroundImage: `url(${MainPhoto})`}}>
                 <BlurredTextBlock title={"Мой путь"}/>
             </motion.div>
-            {//<ChatForm minimize={true}/>
-            }
+            <div className={styles.chatForm}>
+                <ChatForm/>
+            </div>
             <SpecificInformation/>
             <MyPerformance/>
             <SpecificInformation/>

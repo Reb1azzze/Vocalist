@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from "../MyWay/MyWay.module.scss";
+import VocalLessonsJpg from "../../assets/jpg/VocalLessons.jpg"
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
 import MyPerformance from "../../components/MyPerformance/MyPerformance";
-import VocalLessonsJpg from "../../assets/jpg/VocalLessons.jpg"
-
 import ReviewSlider from "../../components/ReviewSlider/ReviewSlider";
 import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
+import ChatForm from "../../components/ChatForm/ChatForm";
 const VocalLessons = () => {
     return (
         <motion.div
@@ -22,8 +22,9 @@ const VocalLessons = () => {
                 style={{backgroundImage: `url(${VocalLessonsJpg})`}}>
                 <BlurredTextBlock title={"Уроки вокала"}/>
             </motion.div>
-            {//<ChatForm minimize={true}/>*/}
-            }
+            <div className={styles.chatForm}>
+                <ChatForm/>
+            </div>
             <SpecificInformation/>
             <MyPerformance/>
             <SpecificInformation/>

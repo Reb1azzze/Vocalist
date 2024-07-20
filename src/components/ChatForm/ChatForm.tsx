@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import styles from './ChatForm.module.scss'
 import ChatBackground from "../../assets/jpg/ChatForm.jpg"
-import { Input, Space, Button, Radio} from "antd";
+import {Input, Button, Select} from "antd";
+import BlurredTextBlock from "../BlurredTextBlock/BlurredTextBlock";
 
 
 interface ChatFormProps {
-    minimize: boolean
-    DarkBackground:() => void;
-    LightBackground:() => void;
-    isChosen: boolean;
+    minimize?: boolean
+    DarkBackground?:() => void;
+    LightBackground?:() => void;
+    isChosen?: boolean;
 }
 const ChatForm = (props : ChatFormProps) => {
 
-    const [value, setValue] = useState(1);
+    const [value, setValue] = useState('lesson');
     const onChange = (e: any) => {
-        setValue(e.target.value);
+        setValue(e);
     };
 
     return (
@@ -23,18 +24,20 @@ const ChatForm = (props : ChatFormProps) => {
              onMouseEnter={props.DarkBackground}
              onMouseLeave={props.LightBackground}>
             <div className={styles.form + ' ' + (props.minimize? styles.minimizeForm : styles.maximizeForm)}>
-                <div className={styles.innerBlock}>
-                    <span className={styles.title}>Заявка</span>
-                </div>
-                <Radio.Group className={styles.radioGroup} onChange={onChange} value={value}>
-                    <Space direction="vertical">
-                        <Radio className={styles.radio} value={1}>Записаться на урок</Radio>
-                        <Radio className={styles.radio} value={2}>Заказать Перфоманс</Radio>
-                    </Space>
-                </Radio.Group>
+                <BlurredTextBlock title={'Заявка'}/>
+                <Select onChange={onChange} defaultValue= "lesson" options={[
+                        {
+                            value: 'lesson',
+                            label: 'Записаться на урок',
+                        },
+                        {
+                            value: 'performance',
+                            label: 'Заказать перфоманс',
+                        }]}>
+                </Select>
                 <Input className={styles.input} type='text' placeholder='Имя'/>
                 <Input className={styles.input} type='text' placeholder='Номер телефона'/>
-                <Button className={styles.submitButton} size="large" type='primary'>Перезвоните мне!</Button>
+                <Button className={styles.submitButton} type='primary'>Перезвоните мне!</Button>
             </div>
         </div>
     );

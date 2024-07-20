@@ -4,8 +4,8 @@ import styles from "../MyWay/MyWay.module.scss";
 import PerformanceJPG from "../../assets/jpg/Performance.jpg";
 import SpecificInformation from "../../components/SpecificInformation/SpecificInformation";
 import MyPerformance from "../../components/MyPerformance/MyPerformance";
-
 import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
+import ChatForm from "../../components/ChatForm/ChatForm";
 
 const Performance = () => {
     return (
@@ -21,8 +21,9 @@ const Performance = () => {
                 style={{backgroundImage: `url(${PerformanceJPG})`}}>
                 <BlurredTextBlock title={"Перфоманс"}/>
             </motion.div>
-            {//<ChatForm minimize={true}/>
-            }
+            <div className={styles.chatForm}>
+                <ChatForm/>
+            </div>
             <SpecificInformation/>
             <MyPerformance/>
             <SpecificInformation/>
