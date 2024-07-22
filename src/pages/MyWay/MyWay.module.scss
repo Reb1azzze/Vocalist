@@ -15,7 +15,35 @@
 .chatForm {
   position: fixed;
   right: 17px;
-  top: 50px;
+  top: 28px;
   width: 22vw;
   height: 90vh;
+}
+
+.pageContainer{
+  display: flex;
+  opacity: 1;
+  padding: 10px;
+  width: 50vw;
+  margin: auto auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playerWrapper {
+  align-self: center;
+  width: 50vw;
+  height: auto;
+  aspect-ratio: 16/9;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 1200px) {
+  .pageContainer {
+    width: 90vw;
+  }
+
+  .playerWrapper {
+    width: 80vw;
+  }
 }

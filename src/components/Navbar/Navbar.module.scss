@@ -10,13 +10,13 @@
   height: 10dvh;
 }
 
-ul {
+.navbarUl {
   position: relative;
   display: flex;
   gap : 25px;
 }
 
-ul li{
+.navbarLi{
   position: relative;
   list-style: none;
   width: 55px;
@@ -30,32 +30,32 @@ ul li{
   align-items: center;
 }
 
-.navbar-menu-item {
+.navbarMenuItem {
 
 }
 
-ul li .navbar-icon{
+ul li .navbarIcon{
   color: #777;
   font-size: 1.55em;
   align-items: center;
 }
 
-ul li:hover .navbar-icon{
+ul li:hover .navbarIcon{
   color: var(--i);
 }
 
-.icon-tg{
+.iconTg{
   --i: rgb(36, 161, 222);
 }
 
-.icon-inst{
+.iconInst{
   --i: rgb(215, 89, 152);
 }
 
-.icon-yt{
+.iconYt{
   --i: rgb(255 0 0);
 }
 
-.icon-menu{
+.iconMenu{
   --i: rgb(18, 193, 222);
 }
