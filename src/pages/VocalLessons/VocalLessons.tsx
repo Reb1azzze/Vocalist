@@ -186,7 +186,7 @@ const VocalLessons = () => {
                     <img src={review4} alt={''}/>
                     <img src={review5} alt={''}/>
                 </Carousel>
-                <Title title={'Научу петь так, чтобы соседи хлопали, а не стучали!'}/>
+                <Title title={'Научимся петь так, чтобы соседи хлопали, а не стучали!'}/>
             </div>
         </motion.div>
     );

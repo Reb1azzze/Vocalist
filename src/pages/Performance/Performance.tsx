@@ -192,7 +192,7 @@ const Performance = () => {
                         <p>Репертуар на разных языках</p>
                     </div>
                 </div>
-                <Title title={'Заказать Перфоманс!'}/>
+                <Title title={'Закажите потрясающий Перфоманс в любую точку мира!'}/>
                 <div className={styles.playerGrid}>
                     <ReactPlayer width={'100%'} height={'100%'} controls={true}
                                  url={'https://youtu.be/wxqiNV_uEmY?si=mdaDCvThaQMC8WW0'}/>
@@ -221,14 +221,13 @@ const Performance = () => {
                 </Carousel>
                 <Title title={'На какое мероприятие подойдет Перформанс?'}/>
                 <div className={styles.performanceGrid}>
-                    <span className={styles.textBlockOnGrid}>На свадьбу</span>
-                    <span className={styles.textBlockOnGrid}>На выпускной</span>
-                    <span className={styles.textBlockOnGrid}>На корпоратив</span>
-                    <span className={styles.textBlockOnGrid}>На день рождения (юбилей)</span>
-                    <span className={styles.textBlockOnGrid}>На Новый год</span>
-                    <span className={styles.textBlockOnGrid}>На городские мероприятия</span>
+                    <span className={styles.textBlockOnGrid}>Свадьба</span>
+                    <span className={styles.textBlockOnGrid}>Выпускной</span>
+                    <span className={styles.textBlockOnGrid}>Корпоратив</span>
+                    <span className={styles.textBlockOnGrid}>День рождения (юбилей)</span>
+                    <span className={styles.textBlockOnGrid}>Новый год</span>
+                    <span className={styles.textBlockOnGrid}>Городские мероприятия</span>
                 </div>
-                <Title title={'Закажите потрясающий Перфоманс в любую точку мира!'}/>
                 <Title title={'Сделаем ваш праздник незабываемым!'}/>
             </div>
         </motion.div>
