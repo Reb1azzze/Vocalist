@@ -28,7 +28,6 @@ import star7 from "../../assets/jpg/star7.jpg"
 import star8 from "../../assets/jpg/star8.jpg"
 import star9 from "../../assets/jpg/star9.jpg"
 import star10 from "../../assets/jpg/star10.jpg"
-import ReviewSlider from "../../components/ReviewSlider/ReviewSlider";
 import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
 import ChatForm from "../../components/ChatForm/ChatForm";
 import Title from "../../components/Title/Title";
