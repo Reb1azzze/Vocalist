@@ -54,9 +54,12 @@
 }
 
 .lessonInfo {
+  align-self: center;
+  width: fit-content;
   background: white;
   box-shadow: 0 10px 25px rgba(0,0,0,0.8);
   border-radius: 30px;
+  padding: 1vw;
   .font {
     background-image: url("../../assets/jpg/goldenFont.jpg");
     background-clip: text;
@@ -73,6 +76,22 @@
   width: 100%;
 }
 
+.performanceGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.textBlockOnGrid {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .pageContainer {
     width: 90vw;
@@ -80,5 +99,14 @@
 
   .playerWrapper {
     width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .lessonInfo {
+    .font {
+      font-size: 13pt;
+      padding: 2px;
+    }
   }
 }

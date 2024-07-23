@@ -14,9 +14,9 @@ import pupil8 from "../../assets/jpg/pupil8.jpg"
 import pupil9 from "../../assets/jpg/pupil9.jpg"
 import pupil10 from "../../assets/jpg/pupil10.jpg"
 import pupil11 from "../../assets/jpg/pupil11.jpg"
-import diploma1 from "../../assets/jpg/diploma1.jpg"
+
 import diploma2 from "../../assets/jpg/diploma2.jpg"
-import diploma3 from "../../assets/jpg/diploma3.png"
+
 import diploma4 from "../../assets/jpg/diploma4.jpg"
 import star1 from "../../assets/jpg/star1.jpg"
 import star2 from "../../assets/jpg/star2.jpg"
@@ -135,15 +135,13 @@ const VocalLessons = () => {
                 <Title title={'Как проходят уроки'}/>
                 <div className={styles.lessonInfo}>
                     <div className={styles.font}>
-                    <ul>
-                        <li>В приятной обстановке, с современным оборудованием, в центре Москвы</li>
-                        <li>Вы избавитесь от страха публичных выступлений и других зажимов в голосе и теле</li>
-                        <li>Научитесь петь с нуля, даже если не пробовали раньше</li>
-                        <li>Успешно подготовитесь к кастингу / конкурсу / прослушиванию / поступлению в театральный ВУЗ</li>
-                        <li>Познакомитесь с передовыми знаниями в области анатомии вокала</li>
-                        <li>Раскроете свой потенциал благодаря техникам качественного звукоизвлечения</li>
-                        <li>Удивите друзей новым репертуаром из песен любимых исполнителей</li>
-                    </ul>
+                        <p>В приятной обстановке, с современным оборудованием, в центре Москвы</p>
+                        <p>Вы избавитесь от страха публичных выступлений и других зажимов в голосе и теле</p>
+                        <p>Научитесь петь с нуля, даже если не пробовали раньше</p>
+                        <p>Успешно подготовитесь к кастингу / конкурсу / прослушиванию / поступлению в театральный ВУЗ</p>
+                        <p>Познакомитесь с передовыми знаниями в области анатомии вокала</p>
+                        <p>Раскроете свой потенциал благодаря техникам качественного звукоизвлечения</p>
+                        <p>Удивите друзей новым репертуаром из песен любимых исполнителей</p>
                     </div>
                 </div>
                 <Title title={'Научатся все!'}/>
@@ -162,9 +160,9 @@ const VocalLessons = () => {
                 </Carousel>
                 <Collapse items={collapseAwards} size={"large"}/>
                 <Carousel className={styles.slider} arrows={true} draggable={true} autoplay={true} dotPosition='top' adaptiveHeight={true}>
-                    <img src={diploma1} alt={''}/>
+
                     <img src={diploma2} alt={''}/>
-                    <img src={diploma3} alt={''}/>
+
                     <img src={diploma4} alt={''}/>
                 </Carousel>
                 <Collapse items={collapseCooperate} size={"large"}/>
