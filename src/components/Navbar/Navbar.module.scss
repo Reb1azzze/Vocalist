@@ -22,6 +22,7 @@
   align-items: center;
   width: 100%;
   gap: 25px;
+  padding: 0 2vw;
 }
 
 .navbarLi {
@@ -39,7 +40,7 @@
 }
 
 .navbarLi:first-child {
-  margin-right: 32.7%;
+  margin-right: 32.28%;
 }
 
 .navbarLi:last-child {
@@ -52,6 +53,7 @@
   background-clip: text;
   color: transparent;
   background-size: cover;
+  letter-spacing: 3px
 }
 
 .insta {

@@ -6,3 +6,21 @@
     flex-direction: column;
     overflow: hidden;
 }
+
+.slick-list {
+    height: 100% !important;
+    object-fit: contain;
+}
+
+.slick-track {
+    height: 100% !important;
+}
+
+.slick-slide {
+    object-fit: contain;
+}
+
+.slick-slide div {
+    height: 100% !important;
+    object-fit: contain;
+}

@@ -61,10 +61,6 @@
   border-radius: 30px;
   padding: 1vw;
   .font {
-    background-image: url("../../assets/jpg/goldenFont.jpg");
-    background-clip: text;
-    background-size: cover;
-    color: transparent;
     font-size: 17pt;
   }
 }
@@ -72,8 +68,17 @@
 .slider {
   box-shadow: 0 10px 25px rgba(0,0,0,0.8);
   margin: 5vh 0;
-  aspect-ratio: 16/9;
+  overflow: hidden;
+  aspect-ratio: 64/43;
   width: 100%;
+  height: auto;
+}
+
+.slider img {
+  object-fit: contain !important;
+  margin: auto;
+  overflow: visible;
+  height: 100%;
 }
 
 .performanceGrid {
