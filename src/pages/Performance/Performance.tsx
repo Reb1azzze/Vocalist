@@ -2,7 +2,6 @@ import React from 'react';
 import {motion} from "framer-motion";
 import styles from "../MyWay/MyWay.module.scss";
 import PerformanceJPG from "../../assets/jpg/Performance.jpg";
-import MyPerformance from "../../components/MyPerformance/MyPerformance";
 import BlurredTextBlock from "../../components/BlurredTextBlock/BlurredTextBlock";
 import ChatForm from "../../components/ChatForm/ChatForm";
 import Title from "../../components/Title/Title";
@@ -31,7 +30,6 @@ const Performance = () => {
 
             <div className={styles.pageContainer}>
                 <Title title={'Хотите превратить ваш праздник в шоу мирового уровня?'}/>
-                <MyPerformance/>
                 <Title title={'Заказать Перфоманс!'}/>
                 <div className={styles.playerWrapper}>
                     <ReactPlayer width={'100%'} height={'100%'}
@@ -54,7 +52,6 @@ const Performance = () => {
                     <li>Татарская лирика</li>
                     <li>Новогодние песни</li>
                 </ul>
-                <MyPerformance/>
                 <Title title={'Закажите потрясающий Перфоманс в любую точку мира!'}/>
                 <Title title={'До встречи на вашем празднике!'}/>
             </div>

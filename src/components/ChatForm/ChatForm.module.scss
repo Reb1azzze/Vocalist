@@ -43,21 +43,6 @@
   animation: minimizeForm 0.65s forwards reverse;
 }
 
-.innerBlock {
-  position: absolute;
-  top: 25px;
-  left: -30px;
-  width: 19vw;
-  height: 5.7vh;
-  background-image: url("../../assets/jpg/whiteBrush.png");
-  background-size: cover;
-  background-position-y: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-}
-
 .title {
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +69,7 @@
   height: 40px;
   align-self: center;
   color: white;
-  background-image: url("../../assets/jpg/test1.jpg");
+  background-image: url("../../assets/jpg/goldenFont.jpg");
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.5) 3px 5px 11px;
 }

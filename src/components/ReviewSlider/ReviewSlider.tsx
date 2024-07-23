@@ -11,7 +11,6 @@ import review5 from "../../assets/jpg/review5.png"
 const ReviewSlider = () => {
     return (
         <div className={styles.container}>
-            <h3 className={styles.performanceText}>Отзывы</h3>
             <div className={styles.sliderContainer}>
                 <Carousel arrows={true} draggable={true} autoplay={true} dotPosition='top'>
                     <img src={review1} alt={''}/>

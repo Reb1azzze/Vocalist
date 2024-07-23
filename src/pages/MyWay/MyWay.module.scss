@@ -15,9 +15,9 @@
 .chatForm {
   position: fixed;
   right: 17px;
-  top: 28px;
   width: 22vw;
   height: 90vh;
+  background-image: url("../../assets/jpg/ChatForm.jpg");
 }
 
 .pageContainer{
@@ -36,6 +36,41 @@
   height: auto;
   aspect-ratio: 16/9;
   box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  margin: 2vh 0;
+}
+
+.playerGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap:2px;
+  height: 80vh;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  margin-bottom: 4vh;
+}
+
+.playerGridLastChild {
+  grid-column: 1/3;
+}
+
+.lessonInfo {
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  border-radius: 30px;
+  .font {
+    background-image: url("../../assets/jpg/goldenFont.jpg");
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+    font-size: 17pt;
+  }
+}
+
+.slider {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  margin: 5vh 0;
+  aspect-ratio: 16/9;
+  width: 100%;
 }
 
 @media (max-width: 1200px) {

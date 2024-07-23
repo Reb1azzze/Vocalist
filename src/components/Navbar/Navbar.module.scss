@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   position: sticky;
   width: 100%;
   display: flex;
@@ -10,13 +10,21 @@
   height: 10dvh;
 }
 
-.navbarUl {
-  position: relative;
-  display: flex;
-  gap : 25px;
+.navbar img {
+  width: 100%;
+  height: auto;
 }
 
-.navbarLi{
+.navbarUl {
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+}
+
+.navbarLi {
   position: relative;
   list-style: none;
   width: 55px;
@@ -30,8 +38,24 @@
   align-items: center;
 }
 
-.navbarMenuItem {
+.navbarLi:first-child {
+  margin-right: 32.7%;
+}
 
+.navbarLi:last-child {
+  margin-right: 10px;
+}
+
+.navbarText {
+  font-size: 34pt;
+  background-image: url("../../assets/jpg/goldenFont.jpg");
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+}
+
+.insta {
+  margin-left: auto;
 }
 
 ul li .navbarIcon{
@@ -58,4 +82,22 @@ ul li:hover .navbarIcon{
 
 .iconMenu{
   --i: rgb(18, 193, 222);
+}
+
+@media (max-width: 1200px) {
+  .navbarLi:first-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .insta, .navbar:first-child {
+    margin: 0;
+  }
+
+  .navbarUl {
+    padding-left: 1%;
+    gap: 10px;
+    justify-content: space-between;
+  }
 }
